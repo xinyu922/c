@@ -15,6 +15,7 @@ int main()
 
 		while((ch=getchar()) == ' ')//屏蔽空格
 			;
+
 		if(ch == '\n')
 		{
 			break;
@@ -26,5 +27,7 @@ int main()
 
 	printf("结果是：%d\n", sum);
 	printf("\n");
-	system("pause");
+	//system("pause");
+
+	return 0;
 }

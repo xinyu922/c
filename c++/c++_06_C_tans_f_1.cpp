@@ -1,21 +1,25 @@
 #include <iostream>
 
+
+void change_temperrature(double tempIn, char tpyeIn);
+void change_temperrature(int tempIn, char tpyeIn);//函数的重载，函数名及函数主体相同，传入的参数或数据类型不同
+
 int main()
 {	
-	void change_temperrature(double tempIn, char tpyeIn);
-	void change_temperrature(int tempIn, char tpyeIn);//函数的重载，函数名及函数主体相同，传入的参数或数据类型不同
-
 	double tempIn;
 	int tempIn_int;
 	char typeIn;
 
 	std::cout << "请输入需要转换的温度\n 格式为：xx.x C or xx.x F\n" << std::endl;
 	std::cin >> tempIn >> typeIn;  //cin 是以空格键进行输入内容的区分，
-
+	std::cin.ignore(100, '\n');
+	std::cout << "\n";
 	change_temperrature(tempIn, typeIn);
 
 	std::cout << "请输入需要转换的温度\n 格式为：xx C or xx F\n" << std::endl;
 	std::cin >> tempIn_int >> typeIn;  //cin 是以空格键进行输入内容的区分，	
+	std::cin.ignore(100, '\n');
+	std::cout << "\n";
 	change_temperrature(tempIn_int, typeIn);
 
 	return 0;

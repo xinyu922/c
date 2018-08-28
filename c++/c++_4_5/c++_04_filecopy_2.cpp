@@ -11,8 +11,8 @@ int main(int argc, char *argv[])
         return 0;
     } 
 
-    ifstream f_read (argv[1],ios::binary | ios::in);
-    ofstream f_write(argv[2],ios::binary | ios::out);
+    ifstream f_read (argv[1], ios::binary | ios::in);
+    ofstream f_write(argv[2], ios::binary | ios::out);
 
     char i;
     if (f_read == NULL)
