@@ -9,7 +9,7 @@ int main()
 
 	for (int i = 0; i < ITEM; i++)
 	{
-		std::cout << "请输入第" << i+1 << "个数据\n";
+		std::cout << "请输入第" << i+1 << "个数据";
 		while(!(std::cin >> num[i]))//输入合法行检验
 		{
 			std::cin.clear();
