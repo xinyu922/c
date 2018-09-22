@@ -1,0 +1,22 @@
+    {
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            //"pythonPath": "C:/Python27/python",
+            "pythonPath": "C:/Users/yanta/AppData/Local/Programs/Python/Python36/python",
+            "program": "${file}",
+            "cwd": "${workspaceRoot}",
+            "env": {},
+            "envFile": "${workspaceRoot}/.env",
+            "debugOptions": [
+                "WaitOnAbnormalExit",
+                "WaitOnNormalExit",
+                "RedirectOutput"
+            ]
+        }
+        ]
+    }
